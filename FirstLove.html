@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>First Love with you</title>
+    <style>
+        body{
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container{
+            background-color: rgb(255, 192, 245);
+            padding: 1rem;
+            border-radius: 10px;
+            width: 300x;
+            
+        }
+        .btn{
+            padding: 0.5rem 2rem;
+            border: none;
+            outline: none;
+            font-weight: bold;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+        .btnPrimary{
+            color: white;
+            background-color: purple;
+        }
+        .btnSecondary{
+             padding: 0.5rem 1rem;
+            background-color: rgb(211, 192, 255);
+        }
+        .moving:hover{
+            margin-left: 48px;
+        }
+    </style>
+</head>
+<body>
+    <section class="container">
+        <h2 class="text">ស្រឡាញ់គេដែរទេ?&#128536;</h2>
+         <button class="btn btnPrimary">YES</button>
+         <button class="btn btnSecondary moving">NO</button>
+    </section>
+    <script>
+        const btnAgree =document.querySelector (".btnPrimary");
+        const btnDisgree =document.querySelector(".btnSecondary");
+        const text = document.querySelector(".text");
+
+        btnAgree.addEventListener("click", ()=>{
+            text.innerText="តោះ រៀបការស្អែក!"
+        })
+       btnDisgree.addEventListener("mouseover", ()=>{
+            text.btnDisgree="btnSecondary";
+        })
+    </script>
+</body>
+</html>
